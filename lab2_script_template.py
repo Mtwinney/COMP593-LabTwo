@@ -1,11 +1,11 @@
 def main():
-    return
+
 
     # TODO: Step 2 - Create a complex data structure
     about_me = {   
         'full_name': 'Michael Twinney',
         'student_id': 1564,
-        'pizza_toppings': [Pepperoni, Cheese, Sausage],
+        'pizza_toppings': ['Pepperoni', 'Cheese', 'Sausage'],
         'movies': [
             {'title': 'Isle Of Dogs', 'genre': 'stop-motion'},
             {'title': 'Django', 'genre': 'Western'}
@@ -15,7 +15,7 @@ def main():
 
     # TODO: Step 3 - Add another movie to the data structure
     extra_movie = {'title': 'The Dirt', 'genre': 'documentary-esque'}
-    added_movie['movies'].append(new_movie)
+    about_me['movies'].append(extra_movie)
 
 # TODO: Step 4 - Function that prints student name and ID	
 def print_student_name_and_id(about_me):
@@ -43,6 +43,11 @@ def add_pizza_toppings(about_me, toppings):
 
 # TODO: Step 6 - Function that prints bullet list of pizza toppings
 def print_pizza_toppings(about_me):
+    if 'pizza_toppings' in about_me:
+        print("My favourite pizza toppings are:")
+        for topping in about_me['pizza toppings']:
+            print(f"- {topping}")
+        print()
     return
 
 # TODO: Step 7 - Function that prints comma-separated list of movie genres
